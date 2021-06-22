@@ -1,0 +1,108 @@
+#include<stdio.h>
+
+int add(int a,int b)
+{
+     int z=0;
+    z=a+b;
+    return z;
+}
+int down(int a,int b)
+{
+     int z=0;
+    if(a>=b)
+    {
+        z=a-b;
+    }
+    else
+    {
+        z=b-a;
+    }
+
+
+    return z;
+}
+int chengfa(int a,int b)
+{
+    int z=0;
+    z=a*b;
+    return z;
+}
+float chufa(float a,float b)
+{
+     float z=9;
+    if(a>=b)
+    {
+        z=a/b;
+    }
+    else
+    {
+        z=b/a;
+    }
+    return z;
+}
+
+int main()
+{
+    int choice=0;
+    int num1=0;
+    int num2=0;
+    int end=0;
+    int need=0;
+    float bud=9;
+    float num3=0;
+    float num4=0;
+    while(need==0)
+    {
+
+
+    printf("此程序为残缺版计算器\n加法请扣1，减法请扣2，乘法请扣3，除法请扣4\n");
+    scanf("%d",&choice);
+
+
+
+    if(choice==1)
+    {printf("请输入两个整数后按回车,每输入一个数字按一次回车哦！\n");
+    scanf("%d%d",&num1,&num2);
+        end=add(num1,num2);
+            printf("结果是%d\n",end);
+    }
+
+    else
+    {
+        if(choice==2)
+    {printf("请输入两个整数后按回车,每输入一个数字按一次回车哦！\n");
+    scanf("%d%d",&num1,&num2);
+        end=down(num1,num2);
+            printf("结果是%d\n",end);
+    }
+    else
+    {
+         if(choice==3)
+    {printf("请输入两个整数后按回车,每输入一个数字按一次回车哦！\n");
+    scanf("%d%d",&num1,&num2);
+        end=chengfa(num1,num2);
+            printf("结果是%d\n",end);
+    }
+
+    else
+    {printf("请输入两个数后按回车,每输入一个数字按一次回车哦！\n");
+    scanf("%f%f",&num3,&num4);
+    bud=chufa(num3,num4);
+         printf("结果是%f\n",bud);
+    }
+
+    }
+
+    }
+
+
+
+    printf("如果想继续扣0，结束扣1\n");
+    scanf("%d",&need);
+
+
+    }
+            system("pause");
+
+    return 0;
+}
