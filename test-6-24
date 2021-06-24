@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int i=2;
+    int v=0;
+    while(i<=100)
+    {
+        v=i%2;
+        if(v==1)
+            printf("%d是奇数\n",i);
+        i++;
+    }
+    return 0;
+}
