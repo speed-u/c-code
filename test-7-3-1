@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int i;
+    int n=1;
+    int m=1;
+    printf("请输入一个数字");
+    scanf("%d",&i);
+    for(;n<=i;n++)
+    {
+       m=m*n;
+    }
+    printf("该数字的阶乘是：%d",m);
+    return 0;
+}
