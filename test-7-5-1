@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int i;
+    int k;
+    int arr[]={1,2,3,4,5,6,7,8.9};
+    int sz=sizeof(arr)/sizeof(arr[0]);
+    printf("请输入你要查找的数字(1到9)\n");
+    scanf("%d",&k);
+    for(i=0;i<sz;i++)
+    {
+        if(arr[i]==k)
+        {
+            printf("找到了，下标是%d\n",i);
+            break;
+        }
+    }
+    if(k>=sz)
+        printf("你输入的数字过大，请重新输入");
+    return 0;
+}
